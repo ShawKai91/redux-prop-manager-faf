@@ -1,3 +1,4 @@
+// INPUT
 .form-input {
     display: grid;
     grid-template-rows: 1fr;
@@ -16,7 +17,6 @@
         grid-column: 2/3;
     }
 }
-
 .form-input {
     &__title {
         color: $color-red-BA;
@@ -33,4 +33,20 @@
         font-size: 1.6rem;
         font-weight: 500;
     }
-} 
+}
+
+// BUTTON
+.form-button {
+    &__button {
+        height: 4rem;
+        width: 21.6rem;
+        border-radius: 2rem;
+        background-color: $color-red-BA;
+
+        color: white;
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 2.8rem;
+        text-align: center;
+    }
+}
