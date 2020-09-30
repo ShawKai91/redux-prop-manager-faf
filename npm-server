@@ -1,0 +1,5 @@
+../propmanager$ npm start
+
+../prop-managment-server$ npm run dev
+	mongod
+		mongo
