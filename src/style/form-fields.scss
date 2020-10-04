@@ -1,4 +1,6 @@
+
 // INPUT
+
 .form-input {
     display: grid;
     grid-template-rows: 1fr;
@@ -17,6 +19,7 @@
         grid-column: 2/3;
     }
 }
+
 .form-input {
     &__title {
         color: $color-red-BA;
@@ -36,6 +39,7 @@
 }
 
 // BUTTON
+
 .form-button {
     &__button {
         height: 4rem;

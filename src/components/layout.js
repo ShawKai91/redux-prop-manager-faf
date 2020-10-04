@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {Header, HeaderBar} from './header';
+
+import { Header, HeaderBar } from './header';
 
 class Layout extends Component {
     render() {
@@ -7,10 +8,10 @@ class Layout extends Component {
             <div className='layout-grid'>
                 <Header/>
                 <HeaderBar/>
-                { this.props.children }
+                {this.props.children}
             </div>
-        )  
-    }  
+        )
+    }
 }
 
 export default Layout;

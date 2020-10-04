@@ -1,16 +1,15 @@
-
-//base
+// BASE
 @import 'variables';
 @import 'base';
 
-//header
+// HEADER
 @import 'header';
 
-//auth
+// AUTH
 @import 'signin';
-@import 'signup'; 
+@import 'signup';
 
-//helpers
+// HELPERS
 @import 'form-title';
 @import 'form-fields';
 @import 'text-link';

@@ -3,3 +3,4 @@
 ../prop-managment-server$ npm run dev
 	mongod
 		mongo
+		use prop_dev

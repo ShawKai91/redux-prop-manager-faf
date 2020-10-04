@@ -14,4 +14,4 @@ class TextLink extends Component {
     }
 }
 
-export default TextLink; 
+export default TextLink;

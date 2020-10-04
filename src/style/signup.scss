@@ -6,7 +6,7 @@
 .sign-up-form {
     display: grid;
     justify-items: center;
-
+    
     &__title {
         width: 100%;
         margin-top: 6.6rem;
@@ -14,7 +14,7 @@
     &__fullname {
         margin-top: 7.7rem;
     }
-
+    
     &__unit,
     &__email,
     &__password  {
@@ -27,4 +27,4 @@
     &__text-links {
         margin-top: 5.2rem;
     }
-} 
+}
