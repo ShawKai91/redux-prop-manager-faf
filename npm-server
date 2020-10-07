@@ -1,6 +1,6 @@
-../propmanager$ npm start
+../dev-propmanagement$ npm start
 
-../prop-managment-server$ npm run dev
+../prop-managment-server-master$ npm run dev
 	mongod
 		mongo
-		use prop_dev
+		use PROP_DEV
