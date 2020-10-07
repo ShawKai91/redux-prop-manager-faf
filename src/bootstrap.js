@@ -11,14 +11,16 @@ const createStoreWithMiddleware = applyMiddleware(reduxThunk)(compose((window.__
 // import 'bootstrap/dist/css/bootstrap.css';
 import './style/main.scss';
 
+import history from './history';
+
 import Layout from './components/layout';
 
+//Auth
+import requireAuth from './components/requireAuth';
 import Signup from './components/auth/signup';
 import Signin from './components/auth/signin';
+//Dashboard
 import Dashboard from './components/dashboard';
-
-import history from './history';
-import requireAuth from './components/requireAuth';
 
 function main() {
   ReactDOM.render(
