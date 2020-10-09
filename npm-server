@@ -1,4 +1,4 @@
-../dev-propmanagement$ npm start
+../Redux-prop-management$ npm start
 
 ../prop-managment-server-master$ npm run dev
 	mongod
