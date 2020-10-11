@@ -83,7 +83,7 @@
         width: 13rem;
     }
     &__danger {
-        border: none;
+        border: 1px solid $color-red-BA;
         color: white;
         background-color: $color-red-BA;
     }
