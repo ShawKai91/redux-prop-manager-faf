@@ -72,6 +72,7 @@ export class FormImage extends Component {
                     {...input}
                     src={imageUrl} 
                 />
+                <input {...input} type={type}/>
                 {/* replace button/input goes here */}
             </div>
         )
