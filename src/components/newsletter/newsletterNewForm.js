@@ -8,11 +8,11 @@ import TextLink from "../textLink";
 class NewNewsletterForm extends Component {
   render() {
 
-    const { handleSubmit } = this.props;
+    const { handleSubmit, title } = this.props;
 
     return (
       <form onSubmit={handleSubmit} className="new-newsletter-form">
-        <FormTitle className="new-newsletter-form__title" text="New Newsletter" />
+        <FormTitle className="new-newsletter-form__title" text={title} />
         <Field
           className="new-newsletter-form__newsletter-title"
           placeholder="Newsletter Title"
