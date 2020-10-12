@@ -18,7 +18,6 @@ class EditNewsletter extends Component {
   };
 
   componentDidMount() {
-    console.log(this.props.match.params.id)
       this.props.fetchNewsletterWithId(this.props.match.params.id);
   }
 
