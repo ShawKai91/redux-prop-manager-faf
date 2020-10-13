@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Button from '../button';
-import RequestsBoxes from './requessBoxes';
+import RequestsBoxes from './requestsBoxes';
 import Requests from './requests';
 
 class RequestsGrid extends Component {
