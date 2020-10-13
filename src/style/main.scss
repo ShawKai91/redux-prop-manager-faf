@@ -21,20 +21,10 @@
 @import 'tab-nav';
 
 // NEWSLETTERS
-@import 'newsletter/newsletter-grid'; 
-@import 'newsletter/newsletter-box'; 
-@import 'newsletter/newsletter-archive'; 
-@import 'newsletter/newsletter-latest';
-@import 'newsletter/newsletter-new';
-@import 'newsletter/newsletter-new-form';
-@import 'newsletter/newsletter-detail';
+@import 'newsletter/newsletter-main';
 
 // BUTTON
 @import 'button'; 
 
 // REQUESTS 
-@import 'requests/requests-grid'; 
-@import 'requests/requests-boxes';
-@import 'requests/requests-box';
-@import 'requests/requests'; 
-@import 'requests/requests-item'; 
+@import 'requests/requests-main'
