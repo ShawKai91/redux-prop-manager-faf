@@ -23,6 +23,18 @@ class RequestsItem extends Component {
                     icon='fas fa-wrench' 
                     callback={() => console.log('tryna change request status')}
                 />
+                                <div className='requests-item__description'>
+                    <img 
+                        className='requests-item__description-img'
+                        src='http://via.placeholder.com/160x94'                        
+                    />
+                    <p className='requests-item__description-text'>
+                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    </p>
+                </div>
             </div>
         )
     }
