@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 
+import { connect } from 'react-redux';
+import * as actions from '../../actions';
+
 import NewNewsletterForm from "../newsletter/newsletterNewForm";
 
 class NewRequest extends Component {
@@ -37,4 +40,10 @@ class NewRequest extends Component {
   }
 }
 
+function mapStateToProps(state) {
+  const { _id } = state.auth.user;
+  return { _id }
+}
+
+NewRequest = connect(mapStateToProps, actions)(NewRequest);
 export default NewRequest;

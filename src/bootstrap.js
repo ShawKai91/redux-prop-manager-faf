@@ -43,7 +43,7 @@ function main() {
             <Route path='/newsletter/edit/:id' component={requireAuth(EditNewsletter)}/>
             <Route path='/newsletter/detail/:id' component={requireAuth(NewsletterDetail)}/>
 
-            <Route path='/request/new' component={requireAuth(NewNewsletter)}/>
+            <Route path='/request/new' component={requireAuth(NewRequest)}/>
           </Layout>
         </Switch>
       </Router>
