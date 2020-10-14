@@ -25,6 +25,8 @@ import NewNewsletter from './components/newsletter/newsletterNew';
 import EditNewsletter from './components/newsletter/newsletterEdit';
 import NewsletterDetail from './components/newsletter/newsletterDetail';
 
+import NewRequest from './components/requests/requestsNew';
+
 function main() {
   ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
@@ -42,7 +44,7 @@ function main() {
             <Route path='/newsletter/edit/:id' component={requireAuth(EditNewsletter)}/>
             <Route path='/newsletter/detail/:id' component={requireAuth(NewsletterDetail)}/>
 
-            <Route path='/request/new' component={NewNewsletter}/>
+            <Route path='/request/new' component={NewRequest}/>
             {/* <Route path='/request/new' component={requireAuth(NewNewsletter)}/> */}
           </Layout>
         </Switch>
