@@ -9,11 +9,7 @@ function ArchiveItem({title, date, _id, callback}) {
         <div className='archive-item archive-items__item'>  
             <a className='archive-item__title' onClick={() => callback(_id)}>{title}</a>
             <div className='archive-item__date'>
-                { date.getMonth() + 1 }
-                /
-                { date.getDate() }
-                /
-                { date.getFullYear() - 2000 } 
+                { date.getMonth() + 1 } / { date.getDate() } / { date.getFullYear() - 2000 } 
             </div>
         </div>
     )
