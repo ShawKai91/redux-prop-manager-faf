@@ -27,13 +27,15 @@ function mapStateToProps(state) {
         switch (request.status) {
             case 'pending':
                 pendingCount +=1;
-            break;
+                break;
             case 'progress':
                 progressCount +=1;
-            break;
+                break;
             case 'complete':
                 completeCount +=1;
-            break
+                break;
+            default:
+                break;
         }
     })
 
