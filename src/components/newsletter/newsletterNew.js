@@ -13,16 +13,14 @@ class NewNewsletter extends Component {
 
     var formData = new FormData();
     formData.append('title', title);
-    console.log('formData.title:', formData.title)
-    console.log('.title:', title)
-
+        console.log('formData.title:', formData.title)
+        console.log('.title:', title)
     formData.append('body', body);
-    console.log('formData.body:', formData.body)
-    console.log('.body:', body)
-
+        console.log('formData.body:', formData.body)
+        console.log('.body:', body)
     formData.append('image', image);
-    console.log('formData.image:', formData.image)
-    console.log('.image:', image)
+        console.log('formData.image:', formData.image)
+        console.log('.image:', image)
 
     this.props.createNewNewsletter(this.props._id, formData, () => {
       this.props.history.push("/dashboard");
