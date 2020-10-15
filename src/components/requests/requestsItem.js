@@ -52,7 +52,7 @@ getElementById
             mainIcon = 'fas fa-check-square'
         }
 
-        this.id = `requests-item__${this.props.id}`
+        this.id = `requests-item__${this.props._id}`
         return (
             <div id={this.id} className='requests-item'>
                 <Icon className='requests-item__icon' icon={mainIcon}/>
