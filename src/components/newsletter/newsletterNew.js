@@ -13,10 +13,14 @@ class NewNewsletter extends Component {
 
     var formData = new FormData();
     formData.append('title', title);
+    console.log('title:',formData.title)
     formData.append('body', body);
+    console.log('body:',formData.body)
     formData.append('image', image);
+    console.log('image:',formData.image)
 
     this.props.createNewNewsletter(this.props._id, formData, () => {
+      console.log(fields)
       this.props.history.push("/dashboard");
     })
     

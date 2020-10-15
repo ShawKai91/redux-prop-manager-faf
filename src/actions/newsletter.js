@@ -34,7 +34,6 @@ export function fetchNewsletterWithId(id) {
 export function createNewNewsletter(userId, formData, success) {
     const token = localStorage.getItem('token');
     return function() {
-        console.log(formData)
         axios.post(`${ROOT_URL}/newsletters/new`, formData, {
             headers: {
                 'Content-Type': 'multipart/form-data',
