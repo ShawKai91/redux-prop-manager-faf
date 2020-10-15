@@ -71,8 +71,6 @@ class NewNewsletterForm extends Component {
           component={FormImage}
           imageUrl={imageUrl}
         />  
-
-
       </form>
     );
   }
