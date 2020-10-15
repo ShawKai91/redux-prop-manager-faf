@@ -31,12 +31,30 @@ class RequestsItem extends Component {
         }
     }
 
+    handleStatus = () => {
+        const { _id, status } = this.props;
+        this.props.changeStatus({_id, status}, () => {
+            this.props.fetchRequests();
+        })
+    }
+
     render() {
-        const { _id, title, body, date, imageUrl, status } = this.props;
+        const { title, body, date, imageUrl, status } = this.props;
         const parsedDate = new Date(date)
+
+        var moveButtonIcon = 'fas fa-wrench';
+        var mainIcon = 'fas fa-exclamation-triangle'
+        if(status == 'in-progress') {
+            moveButtonIcon = 'fas fa-check-square'
+            mainIcon = 'fas fa-wrench'
+        } else if(status == 'complete') {
+            moveButtonIcon = 'fas fa-exclamation-triangle'
+            mainIcon = 'fas fa-check-square'
+        }
+
         return (
             <div id='requests-item' className='requests-item'>
-                <Icon className='requests-item__icon' icon='fas fa-exclamation-triangle'/>
+                <Icon className='requests-item__icon' icon={mainIcon}/>
                 <div className='requests-item__title'>
                     <div className='requests-item__title__text'>{ title }</div>
                     <Icon className='requests-item__title__arrow' icon='fas fa-sort-down'
@@ -49,8 +67,8 @@ class RequestsItem extends Component {
                 <div className='requests-item__date'>
                     { parsedDate.getMonth() + 1 } / { parsedDate.getDate() } / { parsedDate.getFullYear() - 2000 } 
                     </div>
-                <Button className='requests-item__move' icon='fas fa-wrench' 
-                    callback={() => this.props.changeStatus({_id, status})}
+                <Button className='requests-item__move' icon={moveButtonIcon} 
+                    callback={() => this.handleStatus()}
                 />
                 <div className='requests-item__description'>
                     <AnimateHeight
