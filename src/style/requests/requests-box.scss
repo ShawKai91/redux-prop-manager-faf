@@ -3,7 +3,28 @@
 
     @include box;
 
-    &__count {
+    &:hover {
+        border-color: $color-red-BA;
+        background-color: white;
+        .requests-box__point {
+            display: none;
+        }
+        .requests-box__count {
+            transform: translateX(100px);
+            opacity: 0;
+        }
+        .requests-box__icon {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        .requests-box__title {
+            color: $color-red-BA;
+        }
+    }
+
+    &__count,
+    &__icon {
+        transition: all .3s ease;
         align-self: end;
         font-size: 7rem;
         line-height: 8.1rem;
@@ -20,6 +41,14 @@
 
         grid-row: m/e;
         grid-column: s/e;
+
+        transform: translateX(0);
+    }
+
+    &__icon {
+        transform: translateX(-100px);
+        opacity: 0;
+        font-size: 5rem;
     }
 
     &__point {
