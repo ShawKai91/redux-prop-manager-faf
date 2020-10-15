@@ -10,17 +10,19 @@ class NewNewsletter extends Component {
   onSubmit = fields => {
 
     const { title, body, image } = fields;
+    console.log('fields:',fields)
 
     var formData = new FormData();
     formData.append('title', title);
-    console.log('title:',formData.title)
+    console.log('formData.title:',formData.title)
+
     formData.append('body', body);
-    console.log('body:',formData.body)
+    console.log('formData.body:',formData.body)
+
     formData.append('image', image);
-    console.log('image:',formData.image)
+    console.log('formData.image:',formData.image)
 
     this.props.createNewNewsletter(this.props._id, formData, () => {
-      console.log(fields)
       this.props.history.push("/dashboard");
     })
     
