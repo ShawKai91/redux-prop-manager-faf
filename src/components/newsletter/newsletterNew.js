@@ -40,10 +40,5 @@ class NewNewsletter extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  const { _id } = state.auth.user;
-  return { _id }
-}
-
-NewNewsletter = connect(mapStateToProps, actions)(NewNewsletter);
+NewNewsletter = connect(null, actions)(NewNewsletter);
 export default NewNewsletter;
