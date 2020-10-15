@@ -14,7 +14,7 @@ class NewNewsletter extends Component {
     formData.append('body', body);
     formData.append('image', image);
 
-    this.props.createNewNewsletter(this.props._id, formData, () => {
+    this.props.createNewNewsletter(formData, () => {
         this.props.history.push("/dashboard");
     })
   };
@@ -40,5 +40,10 @@ class NewNewsletter extends Component {
   }
 }
 
-NewNewsletter = connect(null, actions)(NewNewsletter);
+function mapStateToProps(state) {
+  const { _id } = state.auth.user;
+  return { _id }
+}
+
+NewNewsletter = connect(mapStateToProps, actions)(NewNewsletter);
 export default NewNewsletter;
