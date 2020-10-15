@@ -28,14 +28,13 @@ function mapStateToProps(state) {
             case 'pending':
                 pendingCount +=1;
                 break;
-            case 'progress':
+            case 'in-progress':
                 progressCount +=1;
                 break;
             case 'complete':
                 completeCount +=1;
                 break;
-            default:
-                break;
+            default: break;
         }
     })
 
