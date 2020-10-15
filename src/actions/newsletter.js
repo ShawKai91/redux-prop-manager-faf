@@ -37,7 +37,8 @@ export function createNewNewsletter(userId, formData, success) {
         axios.post(`${ROOT_URL}/newsletters/new`, formData, {
             headers: {
                 'Content-Type': 'multipart/form-data',
-                authorization: token
+                authorization: token,
+                userId: userId
             }
         })
             .then(response => {
