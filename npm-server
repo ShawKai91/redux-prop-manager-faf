@@ -1,6 +1,6 @@
-../Redux-prop-management$ npm start
-
 ../prop-managment-server-master$ npm run dev
 	mongod
 		mongo
 		use PROP_DEV
+
+../Redux-prop-management$ npm start

@@ -63,7 +63,7 @@ getElementById
                     />
                 </div>
                 <div className='requests-item__tenant-unit'>
-                    Max - Unit 115
+                    Kai - Unit 2594
                 </div>
                 <div className='requests-item__date'>
                     { parsedDate.getMonth() + 1 } / { parsedDate.getDate() } / { parsedDate.getFullYear() - 2000 } 
