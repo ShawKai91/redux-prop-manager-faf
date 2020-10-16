@@ -31,14 +31,14 @@ export function fetchNewsletterWithId(id) {
     }
 }
 
-export function createNewNewsletter(userId, formData, success) {
+export function createNewNewsletter(formData, success) {
     const token = localStorage.getItem('token');
     return function() {
         axios.post(`${ROOT_URL}/newsletters/new`, formData, {
             headers: {
                 'Content-Type': 'multipart/form-data',
                 authorization: token,
-                userId: userId
+                // userId: userId
             }
         })
             .then(response => {
