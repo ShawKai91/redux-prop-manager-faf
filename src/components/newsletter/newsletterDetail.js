@@ -16,7 +16,6 @@ class NewsletterDetail extends Component {
     }
 
     render() {
-        console.log(this.props.newsletterToEdit);
         return (
             <div className='newsletter-detail'>
                 <FormTitle className='newsletter-detail__title' text='Newsletter Archive'/>

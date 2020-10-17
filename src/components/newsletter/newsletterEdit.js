@@ -6,10 +6,7 @@ import NewNewsletterForm from "./newsletterNewForm";
 
 class EditNewsletter extends Component {
   onSubmit = fields => {
-    // if(button == 'submit') {
-    //   // save new newsletter on the backend. perform a post request here.
-    //   console.log('trying to submit to backend.');
-    // }
+  
     this.props.history.push("/dashboard");
   };
 
