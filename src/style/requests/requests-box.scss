@@ -1,7 +1,7 @@
 .requests-box {
     align-content: center;
 
-    @include box;
+    @include box('&__count, &__icon', '&__title');
 
     &:hover {
         border-color: $color-red-BA;
@@ -21,27 +21,12 @@
             color: $color-red-BA;
         }
     }
-
     &__count,
     &__icon {
         transition: all .3s ease;
-        align-self: end;
-        font-size: 7rem;
-        line-height: 8.1rem;
-        margin-bottom: 1rem;
-
-        grid-row: s/m;
-        grid-column: s/e;
     }
 
     &__title {
-        align-self: start;
-        font-size: 2rem;
-        line-height: 2.3rem;
-
-        grid-row: m/e;
-        grid-column: s/e;
-
         transform: translateX(0);
     }
 
@@ -49,10 +34,6 @@
         transform: translateX(-100px);
         opacity: 0;
         font-size: 5rem;
-    }
-
-    &__point {
-        @include box-point;
     }
 } 
 

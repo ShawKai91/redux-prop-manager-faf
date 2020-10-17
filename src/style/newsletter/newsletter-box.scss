@@ -3,28 +3,5 @@
     grid-column: box-s/box-e;
     align-content: center;
 
-    @include box;
-
-    &__day {
-        align-self: end;
-        font-size: 7rem;
-        line-height: 8.1rem;
-        margin-bottom: 1rem;
-
-        grid-row: s/m;
-        grid-column: s/e;
-    }
-
-    &__month-year {
-        align-self: start;
-        font-size: 2rem;
-        line-height: 2.3rem;
-
-        grid-row: m/e;
-        grid-column: s/e;
-    }
-
-    &__point {
-        @include box-point;
-    }
+    @include box('&__day', '&__month-year');
 }

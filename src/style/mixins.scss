@@ -5,7 +5,7 @@
     line-height: 2.3rem;
 } 
 
-@mixin box {
+@mixin box($titleOne, $titleTwo) {
     height: 16rem;
     width: 16rem;
     border: .15rem solid $color-red-BA;
@@ -17,10 +17,27 @@
     justify-items: center;
     grid-template-rows: [s] 8.1rem [m] 2.3rem [e];
     grid-template-columns: [s] 1fr [e];
-}
 
-@mixin box-point {
-    height: 4rem;
+    #{$titleOne} {
+        align-self: end;
+        font-size: 7rem;
+        line-height: 8.1rem;
+        margin-bottom: 1rem;
+
+        grid-row: s/m;
+        grid-column: s/e;
+    }
+    #{$titleTwo} {
+        align-self: start;
+        font-size: 2rem;
+        line-height: 2.3rem;
+
+        grid-row: m/e;
+        grid-column: s/e;
+    }
+    
+    &__point {
+        height: 4rem;
         width: 4rem;
         background-color: white;
         grid-row: s/e;
@@ -34,4 +51,5 @@
         border: .15rem solid $color-red-BA;
         border-bottom: none;
         border-left: none;
+    }
 }
