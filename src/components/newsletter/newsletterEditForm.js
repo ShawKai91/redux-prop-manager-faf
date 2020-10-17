@@ -61,9 +61,9 @@ class EditNewsletterForm extends Component {
           type="file"
           title="Image"
           component={FormImage}
-          imageUrl={this.props.initialValues.imageUrl ?
-            `${ROOT_URL}/${this.props.initialValues.imageUrl}` :
-            'http://via.placeholder.com/150x137'}
+          // imageUrl={this.props.initialValues.imageUrl ?
+          //   `${ROOT_URL}/${this.props.initialValues.imageUrl}` :
+          //   'http://via.placeholder.com/150x137'}
         />  
 
 
