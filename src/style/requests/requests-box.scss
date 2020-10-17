@@ -25,11 +25,9 @@
     &__icon {
         transition: all .3s ease;
     }
-
     &__title {
         transform: translateX(0);
     }
-
     &__icon {
         transform: translateX(-100px);
         opacity: 0;
