@@ -10,7 +10,7 @@ import RequestsGrid from "./requests/requestsGrid";
 class Dashboard extends Component {
 
     componentDidMount() {
-        this.props.updateHeader(`Welcome ${this.props.name}`, 'HOA Management', true);
+        this.props.updateHeader(`Welcome, ${this.props.name}`, 'HOA Management', true);
     }
 
     constructor(props) {
