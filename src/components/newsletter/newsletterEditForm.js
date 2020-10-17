@@ -83,8 +83,8 @@ function mapStateToProps(state) {
       initialValues: newsletterToEdit
   }
 }
-// EditNewsletterForm = connect(state +> {
-//   initialValues = newsletterToEdit
+// EditNewsletterForm = connect(state => {
+//   initialValues = state.newsletters
 // })(EditNewsletterForm)
 
 EditNewsletterForm = connect(mapStateToProps)(EditNewsletterForm);
