@@ -75,3 +75,23 @@ export function createNewNewsletter(userId, formData, success) {
             })
     }
 }
+
+export function editNewsletter(itemId, formData, success) {
+    const token = localStorage.getItem('token');
+    const id = itemId;
+    return function() {
+        axios.post(`${ROOT_URL}/newsletters/edit/${id}`, formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data',
+                authorization: token
+            }
+        })
+            .then(response => {
+                console.log(response.data);
+                success();
+            })
+            .catch(err => {
+                console.log(err);
+            }) 
+    }
+}
