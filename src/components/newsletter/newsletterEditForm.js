@@ -10,11 +10,11 @@ import { ROOT_URL } from '../../config';
 class EditNewsletterForm extends Component {
 
   render() {
-
-    const { handleSubmit, formTitle } = this.props;
+        
     const { 
-        fieldOnePlaceholder, fieldOneTitle,
-        fieldTwoPlaceholder, fieldTwoTitle
+      handleSubmit, formTitle,
+      fieldOnePlaceholder, fieldOneTitle,
+      fieldTwoPlaceholder, fieldTwoTitle
     } = this.props;    
 
     return (
